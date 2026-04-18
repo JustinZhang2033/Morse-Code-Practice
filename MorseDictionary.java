@@ -122,4 +122,17 @@ public class MorseDictionary {
         }
         return result;
     }
+
+    public static String decodeMessage(String m) {
+        String[] mArr = m.split(" ");
+        String translator = "";
+        String decoder = "";
+        String result = "";
+        for (String s : mArr) {
+            translator = s.substring(0, s.length());
+            decoder = MorseDictionary.decode(translator);
+            result += decoder;
+        }
+        return result;
+    }
 }
