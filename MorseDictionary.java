@@ -37,6 +37,17 @@ public class MorseDictionary {
         decoder.put("-.--", "Y");
         decoder.put("--..", "Z");
         decoder.put("/", " ");
+        decoder.put("-----", "0");
+        decoder.put(".----", "1");
+        decoder.put("..---", "2");
+        decoder.put("...--", "3");
+        decoder.put("....-", "4");
+        decoder.put(".....", "5");
+        decoder.put("-....", "6");
+        decoder.put("--...", "7");
+        decoder.put("---..", "8");
+        decoder.put("----.", "9");
+
 
         for (Map.Entry<String, String> entry: decoder.entrySet()) {
             encoder.put(entry.getValue(), entry.getKey());
@@ -71,6 +82,17 @@ public class MorseDictionary {
         letters.add("Z");
         letters.add(" ");
 
+        letters.add("0");
+        letters.add("1");
+        letters.add("2");
+        letters.add("3");
+        letters.add("4");
+        letters.add("5");
+        letters.add("6");
+        letters.add("7");
+        letters.add("8");
+        letters.add("9");
+
         mcodes.add(".-");
         mcodes.add("-...");
         mcodes.add("-.-.");
@@ -98,6 +120,18 @@ public class MorseDictionary {
         mcodes.add("-.--");
         mcodes.add("--..");
         mcodes.add("/");
+        
+        mcodes.add("-----");
+        mcodes.add(".----");
+        mcodes.add("..---");
+        mcodes.add("...--");
+        mcodes.add("....-");
+        mcodes.add(".....");
+        mcodes.add("-....");
+        mcodes.add("--...");
+        mcodes.add("---..");
+        mcodes.add("----.");
+
     }
 
     public static String decode(String code) {
