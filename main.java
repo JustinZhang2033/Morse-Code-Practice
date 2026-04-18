@@ -1,4 +1,6 @@
-//Morse code practice
+//Morse code practice website
+//@Justin Zhang
+//04/17/2026
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;

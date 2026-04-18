@@ -1,3 +1,4 @@
+//Language transfer to Morse Code and English
 import java.util.HashMap;
 import java.util.Map;
 
